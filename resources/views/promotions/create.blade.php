@@ -1,4 +1,3 @@
-{{-- Modal CREATE --}}
 <div id="crud-create-modal"
     class="hidden  fixed inset-0 z-[100] bg-black bg-opacity-40 backdrop-blur-sm flex items-center justify-center"
     style="background-color: rgba(0, 0, 0, 0.4);">

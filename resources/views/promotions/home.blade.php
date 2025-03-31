@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="relative h-screen bg-cover bg-center" style="background-image: url('images/kampus.png');">
-    <div class="absolute inset-0 bg-black opacity-10"></div> <!-- Semi-transparent overlay -->
+    <div class="absolute inset-0 bg-black opacity-10"></div> 
 
     <div class="relative z-10 flex items-center justify-center h-full text-center text-white">
         <div>

@@ -17,7 +17,7 @@
                @csrf
                @method('PUT')
 
-               <!-- FORM INPUTS (sama seperti create) -->
+            
 
                <div class="grid gap-4 mb-4 grid-cols-2">
                    <!-- Judul -->

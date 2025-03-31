@@ -15,9 +15,7 @@ class PromotionController extends Controller
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         return view('promotions.create');
@@ -44,27 +42,21 @@ class PromotionController extends Controller
 }
 
 
-    /**
-     * Display the specified resource.
-     */
+
     public function show(string $id)
     {
         $promotions = Promotion::findOrFail($id);
         return view('promotions.show', compact('promotions'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(string $id)
     {
         $promotion = Promotion::findOrFail($id);
         return view('promotions.edit', compact('promotion'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+
     public function update(Request $request, $id)
     {
         $promotion = Promotion::findOrFail($id);
@@ -84,10 +76,7 @@ class PromotionController extends Controller
     
         return redirect('promotions')->with('success', 'Promosi berhasil diperbarui!');
     }
-    
-    /**
-     * Remove the specified resource from storage.
-     */
+
     public function destroy(string $id)
     {
         $promotion = Promotion::findOrFail($id);

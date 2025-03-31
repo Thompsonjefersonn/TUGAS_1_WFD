@@ -32,3 +32,6 @@ Route::put('/promotions/{id}', [PromotionController::class, 'update'])->name('pr
 
 Route::delete('/promotions/{id}', [PromotionController::class, 'destroy'])->name("promotions.destroy");
 
+
+
+
