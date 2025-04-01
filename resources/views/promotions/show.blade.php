@@ -20,7 +20,7 @@
             <p class="text-lg text-gray-600 mb-4"><strong></strong> {{ $promo->desc3 }}</p>
         @endif
         @if($promo->time)
-        <p class="text-lg text-gray-600 mb-4"><strong>Hari:</strong> {{ $promo->time }}</p>
+        <p class="text-lg text-gray-600 mb-4"><strong>Tanggal:</strong> {{ $promo->time }}</p>
         @endif
     </div>
 </div>
