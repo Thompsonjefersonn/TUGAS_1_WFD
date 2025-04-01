@@ -28,6 +28,9 @@ class PromotionController extends Controller
         'description' => 'required|string',
         'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         'time' => 'required|date',
+        'desc1' => 'nullable|string',
+        'desc2' => 'nullable|string',
+        'desc3' => 'nullable|string',
     ]);
 
     if ($request->hasFile('image')) {
@@ -45,8 +48,8 @@ class PromotionController extends Controller
 
     public function show(string $id)
     {
-        $promotions = Promotion::findOrFail($id);
-        return view('promotions.show', compact('promotions'));
+        $promo = Promotion::findOrFail($id);
+        return view('promotions.show', compact('promo'));
     }
 
 
@@ -66,6 +69,9 @@ class PromotionController extends Controller
             'description' => 'required|string',
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
             'time' => 'required|date',
+            'desc1' => 'nullable|string',
+            'desc2' => 'nullable|string',
+            'desc3' => 'nullable|string',
         ]);
     
         if ($request->hasFile('image')) {

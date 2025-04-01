@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string('image');
             $table->date('time'); // Use datetime() if you need both date and time
             $table->timestamps();
+            $table->text('desc1')->nullable();
+            $table->text('desc2')->nullable();
+            $table->text('desc3')->nullable();
         });
         
     }
